@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Abhinav</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding-top: 100px;
+        background-image: url("background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: transparent;
+    }
+
+    .project-card {
+        background-color: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 165, 0, 0.25);
+        border-radius: 10px;
+        padding: 30px;
+        margin-bottom: 40px;
+        display: inline-block;
+        width: 280px;
+        vertical-align: top;
+        margin-right: 30px;
+        transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+        transform: translateY(-6px);
+        border-color: orange;
+    }
+
+    .tag {
+        display: inline-block;
+        background-color: rgba(255, 165, 0, 0.15);
+        color: orange;
+        border: 1px solid orange;
+        padding: 3px 10px;
+        font-size: 13px;
+        border-radius: 20px;
+        margin: 4px 4px 4px 0;
+    }
+
+    .live-btn {
+        display: inline-block;
+        margin-top: 18px;
+        background-color: transparent;
+        color: orange;
+        border: 2px solid orange;
+        padding: 7px 18px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+
+    .live-btn:hover {
+        background-color: orange;
+        color: black;
+    }
+</style>
+
+<body>
+
+    <!-- Fixed Navbar -->
+    <div class="navbar">
+        <table>
+            <tr>
+                <td style="text-align:left;padding-right:10px;">
+                    <img src="logo.png" style="height:90px;width:90px;margin-left:10px;margin-top:10px;">
+                </td>
+                <td style="padding-right:220px;text-align:left;font-size:20px;color:white;">Abhinav |  Developer  </td>
+                <td><a href="index.html" style="padding-right:90px;font-size:22px;">Home</a></td>
+                <td><a href="about.html" style="padding-right:90px;font-size:22px;">About</a></td>
+                <td><a href="projects.html" style="padding-right:90px;font-size:22px;">Projects</a></td>
+                <td><a href="contact.html" style="padding-right:90px;font-size:22px;">Contact</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Projects Section -->
+    <div style="margin-left:100px; margin-top:60px; padding-bottom:60px;">
+
+        <h1 style="color:orange; font-size:44px; font-weight:400; letter-spacing:2px; margin-bottom:10px;">My Projects</h1>
+        <hr style="border:2px solid orange; width:80px; margin:0 0 15px 0;">
+        <p style="color:#cccccc; font-size:18px; margin-bottom:40px;">Here are some of my real-world projects — live on the web!</p>
+
+        <!-- Project 1: Aangan -->
+        <div class="project-card">
+            <h2 style="color:orange; font-size:24px; font-weight:400; margin-top:0; margin-bottom:10px;">&#127968; Aangan</h2>
+            <p style="color:#cccccc; font-size:15px; line-height:1.7; margin-bottom:15px;">
+                A luxury real estate landing page for a premium Mumbai property. Features stunning visuals, room tours, gallery, and a book-a-visit CTA. Designed with an elegant, minimal aesthetic.
+            </p>
+            <span class="tag">UI/UX</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Real Estate</span>
+            <br>
+            <a href="https://aangan-x.vercel.app" target="_blank" class="live-btn">&#128279; Live Demo</a>
+        </div>
+
+        <!-- Project 2: NetSentinel -->
+        <div class="project-card">
+            <h2 style="color:orange; font-size:24px; font-weight:400; margin-top:0; margin-bottom:10px;">&#128737; NetSentinel</h2>
+            <p style="color:#cccccc; font-size:15px; line-height:1.7; margin-bottom:15px;">
+                A real-time network threat visualization dashboard. Displays live node connections, threat count, uptime, and an event feed — built for cybersecurity monitoring with a hacker-style dark UI.
+            </p>
+            <span class="tag">Cybersecurity</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Dashboard</span>
+            <span class="tag">Dark UI</span>
+            <br>
+            <a href="https://netsentinel-x.vercel.app" target="_blank" class="live-btn">&#128279; Live Demo</a>
+        </div>
+
+        <!-- Project 3: Pizza Theory -->
+        <div class="project-card">
+            <h2 style="color:orange; font-size:24px; font-weight:400; margin-top:0; margin-bottom:10px;">&#127829; Pizza Theory</h2>
+            <p style="color:#cccccc; font-size:15px; line-height:1.7; margin-bottom:15px;">
+                A premium pizza restaurant website with a dark, cinematic design. Features a full menu with signature pizzas, ingredient highlights, reviews, and a reservation system. Craft meets flavour.
+            </p>
+            <span class="tag">Restaurant</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Web Design</span>
+            <br>
+            <a href="https://pizzatheory.vercel.app" target="_blank" class="live-btn">&#128279; Live Demo</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
